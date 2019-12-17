@@ -1,0 +1,41 @@
+header {
+    display: inline-block;
+    height: 40px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: #fff;
+    line-height: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+aside {
+    display: inline-block;
+    width: 100px;
+    background-color: pink;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    bottom: 0;
+}
+
+#feed {
+    display: inline-block;
+    min-width: 500px;
+    width: calc(100% - 280px);
+    max-width: 1000px;
+    margin: 80px 0 80px 140px;
+    background-color: #eee;
+}
+
+#messenger {
+    display: inline-block;
+    width: 100px;
+    background-color: yellowgreen;
+    position: fixed;
+    top: 40px;
+    right: 0;
+    bottom: 0;
+}
