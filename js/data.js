@@ -12,7 +12,7 @@ const posts = [
     //     content: {
     //         text: 'Lorem ipsum dolor sit amet...',
     //         background: 'red',
-    //         img: ['img-1.jpg', 'img-2.png', 'img-3.jpg']
+    //         img: ['img-1.png', 'img-2.png', 'img-3.jpg']
     //     }
     // },
     {
@@ -49,7 +49,7 @@ const posts = [
         time: 1576592401104,
         content: {
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            img: ['img-1.jpg']
+            img: ['img-1.png']
         }
     },
     {
@@ -62,7 +62,7 @@ const posts = [
         time: 1576592401104,
         content: {
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            img: ['img-1.jpg', 'img-2.jpg']
+            img: ['img-1.png', 'img-2.png']
         }
     },
     {
@@ -75,7 +75,7 @@ const posts = [
         time: 1576592401104,
         content: {
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            img: ['img-1.jpg', 'img-2.jpg', 'img-3.jpg']
+            img: ['img-1.png', 'img-2.png', 'img-3.jpg']
         }
     },
     {
@@ -88,7 +88,7 @@ const posts = [
         time: 1576592401104,
         content: {
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            img: ['img-1.jpg', 'img-2.jpg', 'img-3.jpg', 'img-4.jpg']
+            img: ['img-1.png', 'img-2.png', 'img-3.jpg', 'img-4.png']
         }
     },
     {
@@ -101,7 +101,7 @@ const posts = [
         time: 1576592401104,
         content: {
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            img: ['img-1.jpg', 'img-2.jpg', 'img-3.jpg', 'img-4.jpg', 'img-2.jpg', 'img-3.jpg', 'img-4.jpg']
+            img: ['img-1.png', 'img-2.png', 'img-3.jpg', 'img-4.png', 'img-2.png', 'img-3.jpg', 'img-4.png']
         }
     },
     {
