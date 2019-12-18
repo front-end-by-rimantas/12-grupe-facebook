@@ -12,14 +12,14 @@ const posts = [
     //     content: {
     //         text: 'Lorem ipsum dolor sit amet...',
     //         background: 'red',
-    //         img: ['img-1.jpg', 'img-2.png', 'img-3.jpg']
+    //         img: ['img-1.png', 'img-2.png', 'img-3.jpg']
     //     }
     // },
     {
         author: {
-            name: 'John',
+            name: 'Chirstine',
             surname: 'Dear',
-            img: 'john-dear.jpg',
+            img: 'christine.jpg',
             link: '#'
         },
         time: 1576592401104,
@@ -29,9 +29,9 @@ const posts = [
     },
     {
         author: {
-            name: 'John',
+            name: 'Dwight',
             surname: 'Dear',
-            img: 'john-dear.jpg',
+            img: 'dwight.jpg',
             link: '#'
         },
         time: 1576592401104,
@@ -41,74 +41,74 @@ const posts = [
     },
     {
         author: {
-            name: 'John',
+            name: 'Dylan',
             surname: 'Dear',
-            img: 'john-dear.jpg',
+            img: 'dylan.jpg',
             link: '#'
         },
         time: 1576592401104,
         content: {
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            img: ['img-1.jpg']
+            img: ['img-1.png']
         }
     },
     {
         author: {
-            name: 'John',
+            name: 'Jack',
             surname: 'Dear',
-            img: 'john-dear.jpg',
+            img: 'jack.jpg',
             link: '#'
         },
         time: 1576592401104,
         content: {
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            img: ['img-1.jpg', 'img-2.jpg']
+            img: ['img-1.png', 'img-2.png']
         }
     },
     {
         author: {
-            name: 'John',
+            name: 'Olivia',
             surname: 'Dear',
-            img: 'john-dear.jpg',
+            img: 'olivia.jpg',
             link: '#'
         },
         time: 1576592401104,
         content: {
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            img: ['img-1.jpg', 'img-2.jpg', 'img-3.jpg']
+            img: ['img-1.png', 'img-2.png', 'img-3.jpg']
         }
     },
     {
         author: {
-            name: 'John',
+            name: 'Robert',
             surname: 'Dear',
-            img: 'john-dear.jpg',
+            img: 'robert.jpg',
             link: '#'
         },
         time: 1576592401104,
         content: {
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            img: ['img-1.jpg', 'img-2.jpg', 'img-3.jpg', 'img-4.jpg']
+            img: ['img-1.png', 'img-2.png', 'img-3.jpg', 'img-4.png']
         }
     },
     {
         author: {
-            name: 'John',
+            name: 'Robert',
             surname: 'Dear',
-            img: 'john-dear.jpg',
+            img: 'robert.jpg',
             link: '#'
         },
         time: 1576592401104,
         content: {
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            img: ['img-1.jpg', 'img-2.jpg', 'img-3.jpg', 'img-4.jpg', 'img-2.jpg', 'img-3.jpg', 'img-4.jpg']
+            img: ['img-1.png', 'img-2.png', 'img-3.jpg', 'img-4.png', 'img-2.png', 'img-3.jpg', 'img-4.png']
         }
     },
     {
         author: {
-            name: 'John',
+            name: 'Olivia',
             surname: 'Dear',
-            img: 'john-dear.jpg',
+            img: 'olivia.jpg',
             link: '#'
         },
         time: 1576592401104,
@@ -118,9 +118,9 @@ const posts = [
     },
     {
         author: {
-            name: 'John',
+            name: 'Dylan',
             surname: 'Dear',
-            img: 'john-dear.jpg',
+            img: 'dylan.jpg',
             link: '#'
         },
         time: 1576592401104,
