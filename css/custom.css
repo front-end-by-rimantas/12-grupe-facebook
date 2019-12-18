@@ -1,4 +1,4 @@
-header {
+body > header {
     display: inline-block;
     height: 40px;
     padding: 10px 20px;
@@ -9,6 +9,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 aside {
@@ -27,7 +28,6 @@ aside {
     width: calc(100% - 280px);
     max-width: 1000px;
     margin: 80px 0 80px 140px;
-    background-color: #eee;
 }
 
 #messenger {
