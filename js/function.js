@@ -23,12 +23,26 @@ function renderPost( data ) {
     return;
 }
 
-function renderPostHeader() {
-    return '<header>POST HEADER</header>';
+function renderPostHeader( data ) {
+    console.log(data);
+    console.log(data.author.name);
+    
+    return `<header>
+                <a href="#" class="user-image">
+                    <img src="./img/users/${data.author.img}" alt="User photo">
+                </a>
+                <div class="texts">
+                    <div class="author">
+                        <a href="#">${data.author.name} ${data.author.surname}</a>
+                    </div>
+                    <span class="time">${data.time}</span>
+                </div>
+                <i class="fa fa-ellipsis-h"></i>
+            </header>`;
 }
 
 function renderPostContent() {
-    return '<div>POST CONTENT</div>';
+    return '<div class="content">POST CONTENT</div>';
 }
 
 function renderPostFooter() {

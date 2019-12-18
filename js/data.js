@@ -17,9 +17,9 @@ const posts = [
     // },
     {
         author: {
-            name: 'John',
+            name: 'Chirstine',
             surname: 'Dear',
-            img: 'john-dear.jpg',
+            img: 'christine.jpg',
             link: '#'
         },
         time: 1576592401104,
@@ -29,9 +29,9 @@ const posts = [
     },
     {
         author: {
-            name: 'John',
+            name: 'Dwight',
             surname: 'Dear',
-            img: 'john-dear.jpg',
+            img: 'dwight.jpg',
             link: '#'
         },
         time: 1576592401104,
@@ -41,9 +41,9 @@ const posts = [
     },
     {
         author: {
-            name: 'John',
+            name: 'Dylan',
             surname: 'Dear',
-            img: 'john-dear.jpg',
+            img: 'dylan.jpg',
             link: '#'
         },
         time: 1576592401104,
@@ -54,9 +54,9 @@ const posts = [
     },
     {
         author: {
-            name: 'John',
+            name: 'Jack',
             surname: 'Dear',
-            img: 'john-dear.jpg',
+            img: 'jack.jpg',
             link: '#'
         },
         time: 1576592401104,
@@ -67,9 +67,9 @@ const posts = [
     },
     {
         author: {
-            name: 'John',
+            name: 'Olivia',
             surname: 'Dear',
-            img: 'john-dear.jpg',
+            img: 'olivia.jpg',
             link: '#'
         },
         time: 1576592401104,
@@ -80,9 +80,9 @@ const posts = [
     },
     {
         author: {
-            name: 'John',
+            name: 'Robert',
             surname: 'Dear',
-            img: 'john-dear.jpg',
+            img: 'robert.jpg',
             link: '#'
         },
         time: 1576592401104,
@@ -93,9 +93,9 @@ const posts = [
     },
     {
         author: {
-            name: 'John',
+            name: 'Robert',
             surname: 'Dear',
-            img: 'john-dear.jpg',
+            img: 'robert.jpg',
             link: '#'
         },
         time: 1576592401104,
@@ -106,9 +106,9 @@ const posts = [
     },
     {
         author: {
-            name: 'John',
+            name: 'Olivia',
             surname: 'Dear',
-            img: 'john-dear.jpg',
+            img: 'olivia.jpg',
             link: '#'
         },
         time: 1576592401104,
@@ -118,9 +118,9 @@ const posts = [
     },
     {
         author: {
-            name: 'John',
+            name: 'Dylan',
             surname: 'Dear',
-            img: 'john-dear.jpg',
+            img: 'dylan.jpg',
             link: '#'
         },
         time: 1576592401104,
