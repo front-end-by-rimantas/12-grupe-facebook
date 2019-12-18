@@ -59,9 +59,64 @@
 .post > .content {
     display: inline-block;
     width: 100%;
+    padding: 40px 10px;
 }
 .post > footer {
     display: inline-block;
     width: 100%;
     padding: 10px;
 }
+    .post > footer > .row {
+        display: inline-block;
+        width: 100%;
+        padding: 10px 0;
+        border-top: 1px solid #ccc;
+    }
+        .post > footer .action {
+            display: inline-block;
+            width: 50%;
+            float: left;
+            text-align: center;
+        }
+            .post .action > span  {
+                margin-left: 10px;
+            }
+        .post > footer .user-photo {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            float: left;
+            margin-right: 10px;
+            border-radius: 50%;
+            border-top: 1px solid #ccc;
+        }
+        .post > footer form {
+            display: inline-block;
+            width: calc(100% - 50px);
+            float: left;
+            position: relative;
+        }
+            .post form > textarea {
+                display: inline-block;
+                width: 100%;
+                height: 40px;
+                padding: 10px 30px;
+                line-height: 20px;
+                border-radius: 20px;
+                border-top: 1px solid #ccc;
+                resize: none;
+                overflow: hidden;
+            }
+            .post form > .actions {
+                display: inline-block;
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+            }
+                .post .actions > .fa {
+                    display: inline-block;
+                    width: 22px;
+                    line-height: 20px;
+                    font-size: 16px;
+                    text-align: center;
+                }

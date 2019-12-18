@@ -46,5 +46,28 @@ function renderPostContent() {
 }
 
 function renderPostFooter() {
-    return '<footer>POST FOOTER</footer>';
+    return `<footer>
+                <div class="row">
+                    <div class="action">
+                        <i class="fa fa-thumbs-o-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div class="action">
+                        <i class="fa fa-comment-o"></i>
+                        <span>Comment</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <img class="user-photo" src="./img/users/christine.jpg" alt="User photo">
+                    <form>
+                        <textarea></textarea>
+                        <div class="actions">
+                            <i class="fa fa-smile-o"></i>
+                            <i class="fa fa-camera"></i>
+                            <i class="fa fa-picture-o"></i>
+                            <i class="fa fa-sticky-note-o"></i>
+                        </div>
+                    </form>
+                </div>
+            </footer>`;
 }
