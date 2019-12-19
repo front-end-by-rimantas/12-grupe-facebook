@@ -66,6 +66,10 @@
         width: 100%;
         padding: 10px;
     }
+        .post > .content > p.big-text {
+            font-size: 40px;
+            line-height: 55px;
+        }
     .post > .content > .gallery {
         display: inline-block;
         width: 100%;
