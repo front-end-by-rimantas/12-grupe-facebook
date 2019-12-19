@@ -47,6 +47,10 @@ function renderPostContent( content ) {
              !content.img ) {
             textClass = `big-text`;
         }
+        if ( content.background &&
+             !content.img ) {
+            textClass += ' background ' + content.background;
+        }
         textHTML = `<p class="${textClass}">${content.text}</p>`;
     }
 
