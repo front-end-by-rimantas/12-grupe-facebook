@@ -8,8 +8,6 @@ function renderFeed( list ) {
     for ( let i=0; i<list.length; i++ ) {
         renderPost( list[i] );
     }
-    
-    return;
 }
 
 function renderPost( data ) {
@@ -20,7 +18,6 @@ function renderPost( data ) {
                 </div>`;
     
     document.getElementById('feed').innerHTML += HTML;
-    return;
 }
 
 function renderPostHeader( data ) {
@@ -42,15 +39,27 @@ function renderPostContent( content ) {
     let textHTML = '';
     let galleryHTML = '';
 
+    // jei yra, generuojame posto teksta ir atsizvelgiame i jo dydi
+    // ir ar reikia spalvota fona uzdeti
+    let textClass = '';
     if ( content.text ) {
-        textHTML = content.text;
+        if ( content.text.length < 61 &&
+             !content.img ) {
+            textClass = `big-text`;
+        }
+        if ( content.background &&
+             !content.img ) {
+            textClass += ' background ' + content.background;
+        }
+        textHTML = `<p class="${textClass}">${content.text}</p>`;
     }
+
     if ( content.img ) {
         galleryHTML = renderGallery( content.img );
     }
     
     return `<div class="content">
-                <p>${textHTML}</p>
+                ${textHTML}
                 ${galleryHTML}
             </div>`;
 }

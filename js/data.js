@@ -125,6 +125,19 @@ const posts = [
         },
         time: 1576592401104,
         content: {
+            text: 'Lorem ipsum dolor sit amet, consectetur.',
+            background: 'blue'
+        }
+    },
+    {
+        author: {
+            name: 'Dylan',
+            surname: 'Dear',
+            img: 'dylan.jpg',
+            link: '#'
+        },
+        time: 1576592401104,
+        content: {
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             background: 'red'
         }
