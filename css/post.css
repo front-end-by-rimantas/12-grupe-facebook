@@ -65,7 +65,37 @@
         display: inline-block;
         width: 100%;
         padding: 10px;
+        line-height: 25px;
+        font-size: 18px;
+        position: relative;
     }
+        .post > .content > p.big-text {
+            font-size: 40px;
+            line-height: 55px;
+        }
+        .post > .content > p.background {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 320px;
+        }
+        .post > .content > p.blue {
+            background-color: #36f;
+            color: #fff;
+        }
+        .post > .content > p.red {
+            background-color: #f33;
+            color: #fff;
+        }
+        .post > .content > p > .more {
+            margin-left: 5px;
+            color: #36f;
+            cursor: pointer;
+        }
+            .post > .content > p > .more:hover {
+                text-decoration: underline;
+            }
     .post > .content > .gallery {
         display: inline-block;
         width: 100%;

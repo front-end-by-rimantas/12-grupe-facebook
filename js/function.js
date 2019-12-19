@@ -8,8 +8,6 @@ function renderFeed( list ) {
     for ( let i=0; i<list.length; i++ ) {
         renderPost( list[i] );
     }
-    
-    return;
 }
 
 function renderPost( data ) {
@@ -20,7 +18,6 @@ function renderPost( data ) {
                 </div>`;
     
     document.getElementById('feed').innerHTML += HTML;
-    return;
 }
 
 function renderPostHeader( data ) {
@@ -43,16 +40,66 @@ function renderPostContent( content ) {
     let galleryHTML = '';
 
     if ( content.text ) {
-        textHTML = content.text;
+        textHTML = renderPostText( content );
     }
+
     if ( content.img ) {
         galleryHTML = renderGallery( content.img );
     }
     
     return `<div class="content">
-                <p>${textHTML}</p>
+                ${textHTML}
                 ${galleryHTML}
             </div>`;
+}
+
+function renderPostText( content ) {
+    let HTML = '';
+    let text = '';
+    let more = '';
+    const shortTextLength = 60;
+    const textVisibleMaxLength = 350;
+    const textMaxLength = 450;
+
+    // jei yra, generuojame posto teksta ir atsizvelgiame i jo dydi
+    // ir ar reikia spalvota fona uzdeti
+    let textClass = '';
+    if ( content.text ) {
+        if ( content.text.length <= shortTextLength &&
+             !content.img ) {
+            textClass = `big-text`;
+        }
+        if ( content.background &&
+             !content.img ) {
+            textClass += ' background ' + content.background;
+        }
+
+        text = content.text;
+        if ( text.length > textMaxLength ) {
+            // atkerpame teksto dali iki 350 simboliu
+            text = text.slice(0, textVisibleMaxLength);
+
+            // nutriname is galo neisbaigtus zodius ar pan.
+            let letterRemove = 0;
+            for ( let i=textVisibleMaxLength-1; i>=0; i-- ) {
+                const letter = text[i];
+                if ( letter === ' ' ) {
+                    break;
+                }
+                letterRemove++;
+            }
+            if ( letterRemove !== textVisibleMaxLength ) {
+                text = text.slice(0, -letterRemove-1);
+            }
+            more = `...<span class="more">See more</span>`;
+        }
+
+        HTML = `<p class="${textClass}">
+                    ${text}${more}
+                </p>`;
+    }
+
+    return HTML;
 }
 
 function renderPostFooter() {
