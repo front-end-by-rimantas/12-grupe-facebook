@@ -69,6 +69,9 @@
         font-size: 18px;
         position: relative;
     }
+        .post > .content > p.hidden {
+            display: none;
+        }
         .post > .content > p.big-text {
             font-size: 40px;
             line-height: 55px;

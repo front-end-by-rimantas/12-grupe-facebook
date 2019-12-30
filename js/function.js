@@ -23,6 +23,24 @@ function renderFeed( list ) {
     for ( let i=0; i<list.length; i++ ) {
         renderPost( list[i] );
     }
+
+    // sudedame ant visu "See more" elementu "click" event'a
+    const seeMore = document.querySelectorAll('.post > .content > p > .more');
+
+    for ( let i=0; i<seeMore.length; i++ ) {
+        const element = seeMore[i];
+        element.addEventListener('click', onSeeMoreClick);
+    }
+    
+}
+
+function onSeeMoreClick( event ) {
+    const content = event.target.closest('.content');
+    
+    // antram p atimam hidden klase
+    content.querySelector('p.hidden').classList.remove('hidden');
+    // pirmam p duodam hidden klase
+    content.querySelector('p').classList.add('hidden');
 }
 
 function renderPost( data ) {
@@ -112,6 +130,12 @@ function renderPostText( content ) {
         HTML = `<p class="${textClass}">
                     ${text}${more}
                 </p>`;
+
+        if ( more !== '' ) {
+            HTML += `<p class="${textClass} hidden">
+                        ${content.text}
+                    </p>`;
+        }
     }
 
     return HTML;
