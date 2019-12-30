@@ -1,3 +1,5 @@
 "use strict";
 
-renderFeed( posts );
+getPosts( renderFeed );
+
+// renderFeed( posts );
