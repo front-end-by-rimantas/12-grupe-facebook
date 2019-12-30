@@ -122,7 +122,7 @@
         "time": 1576592401104,
         "content": {
             "text": "Lorem ipsum dolor sit amet, consectetur.",
-            background: "blue"
+            "background": "blue"
         }
     },
     {
@@ -135,7 +135,7 @@
         "time": 1576592401104,
         "content": {
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            background: "red"
+            "background": "red"
         }
     }
 ]
