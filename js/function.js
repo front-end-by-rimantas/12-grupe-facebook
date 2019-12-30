@@ -164,7 +164,47 @@ function renderGallery( list ) {
 }
 
 function formatDate( timestamp ) {
-    console.log(timestamp);
-    
-    return '6h ago';
+    const now = Date.now();
+    let seconds = Math.floor((now - timestamp) / 1000);
+
+    // Just now         -> 0..15s
+    if ( seconds < 16 ) {
+        return 'Just now';
+    }
+
+    // [x]sec           -> 16..59s
+    if ( seconds < 60 ) {
+        return seconds+'s ago';
+    }
+
+    // [x]min           -> 1..59min
+    const minutes = (seconds - (seconds%60)) / 60;
+    if ( minutes < 60 ) {
+        return minutes+'min ago';
+    }
+
+    // [x]h             -> 1..23h
+    const hours = (minutes - (minutes%60)) / 60;
+    if ( hours < 24 ) {
+        return hours+'h ago';
+    }
+
+    // [x]days          -> 1..6 days
+    const days = (hours - (hours%24)) / 24;
+    if ( days < 7 ) {
+        return days+'days ago';
+    }
+
+    // [x]weeks         -> 7..27
+    if ( days < 28 ) {
+        return Math.floor(days/7)+'weeks ago';
+    }
+
+    // [x]months        -> 28..365
+    if ( days < 366 ) {
+        return Math.floor(days/30.45)+'weeks ago';
+    }
+
+    // [x]years         -> 366..Infinity
+    return Math.floor(days/365.25)+'years ago';
 }
