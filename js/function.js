@@ -44,7 +44,7 @@ function renderPostHeader( data ) {
                     <div class="author">
                         <a href="#">${data.author.name} ${data.author.surname}</a>
                     </div>
-                    <span class="time">${data.time}</span>
+                    <span class="time">${formatDate(data.time)}</span>
                 </div>
                 <i class="fa fa-ellipsis-h"></i>
             </header>`;
@@ -161,4 +161,10 @@ function renderGallery( list ) {
     }
 
     return `<div class="gallery gallery-${size}">${HTML}</div>`;
+}
+
+function formatDate( timestamp ) {
+    console.log(timestamp);
+    
+    return '6h ago';
 }
