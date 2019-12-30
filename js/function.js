@@ -1,5 +1,20 @@
 "use strict";
 
+function getPosts( callback ) {
+    const API = 'https://front-end-by-rimantas.github.io/12-grupe-facebook/js/posts.json';
+
+    // darome uzklausa gauti duomenis
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            // Typical action to be performed when the document is ready:
+            callback(xhttp.responseText);
+        }
+    };
+    xhttp.open("GET", API, true);
+    xhttp.send();
+}
+
 function renderFeed( list ) {
     if ( Array.isArray(list) === false ) {
         return console.error('Feeda turi sudaryti sarasas(array) postu objektu (objects).')
